@@ -1,0 +1,22 @@
+<html>
+
+<script>
+    let size=10
+    function dose(){
+        if (event.ctrlKey){
+            size+=1
+        }
+        if (event.altKey){
+            size-=1
+        }
+        s.style.top=event.clientY
+        s.style.left=event.clientX 
+        s.style.left=event.clientX
+        s.style.fontSize=size 
+    }
+</script>
+<body onmousemove="dose()">
+
+<span id="s" style="position:absolute;top:200;left:600" > Shafeeq </span>
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+<html>
+<script>
+function checkData(){
+    let answer=true
+    if (name1.value==""){
+        nameErr.style.visibility="visible"
+        answer=false
+    }
+    if (postcode.value==""){
+        postcodeErr.style.visibility="visible"
+        answer=false
+    }
+     if (address.value==""){
+        addressErr.style.visibility="visible"
+        answer=false   
+    }
+    return answer
+}
+</script>
+<form action="http://www.Qa.com" onsubmit="return checkData()">
+Entername: <input type="text" id="name1"> <span id="nameErr" style="color:red;visibility:hidden"> name is missing </span>
+<br>
+Address: <input type="text" id="address"> <span id="addressErr" style="color:red;visibility:hidden"> address is missing </span>
+<br>
+Postcode: <input type="text" id="postcode"> <span id="postcodeErr" style="color:red;visibility:hidden"> postcode is missing </span>
+<input type="submit" value="ok" >
+</form>
+</html>

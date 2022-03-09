@@ -1,0 +1,27 @@
+<html>
+<body>
+<script>
+    
+  function addrecord(){
+  
+    table1=document.createElement("table")
+    
+    let tr=document.createElement("tr")
+    
+    let td1=tr.appendChild(document.createElement("td"));
+    let td2=tr.appendChild(document.createElement("td"));
+
+   td1.innerHTML=nam.value
+   td2.innerHTML=marks
+
+   document.body.appendChild(table1)
+
+  }
+
+</script>
+
+    name:<input type="text" id="nam"><br>
+    marks:<input type="text" id="marks"><br>
+    <input type="button" value="add" onClick="addrecord()"><br>
+</body>
+</html>

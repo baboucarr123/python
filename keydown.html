@@ -1,0 +1,25 @@
+<html>
+<script>
+    let T=0
+    let T=0
+    function dosome(){
+        if (event.KeyCode==39){
+            L+=5
+        }
+        if (event.KeyCode==37){
+            L-=5
+        }
+        if (event.KeyCode==40){
+            T+=5
+        }
+        if (event.KeyCode==38){
+            T-=5
+        }
+        s.style.left=L
+        s.style.top=T
+    }
+    </script>
+    <body onKeydown="dosome()">
+    <span id="s" style="position:absolute;top:0;left:0" > () </span>
+    </body>
+    </html>
